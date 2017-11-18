@@ -1,5 +1,7 @@
 package br.ucsal.geu.model;
 
+import br.ucsal.geu.model.Tipo;
+
 public class Espaco {
 	
 	private Integer id;
@@ -10,7 +12,15 @@ public class Espaco {
 	
 	private Bloco bloco;
 	
-	private String funcao;
+	private Tipo tipo;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
 	public String getIdentificacao() {
 		return identificacao;
@@ -36,20 +46,12 @@ public class Espaco {
 		this.bloco = bloco;
 	}
 
-	public String getFuncao() {
-		return funcao;
+	public Tipo getTipo() {
+		return tipo;
 	}
 
-	public void setFuncao(String funcao) {
-		this.funcao = funcao;
-	}
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
+	public void setTipo(Tipo tipo) {
+		this.tipo = tipo;
 	}
 
 

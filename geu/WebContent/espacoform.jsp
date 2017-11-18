@@ -34,7 +34,12 @@
 			</c:forEach>
 		</select>
 		
-		<br> Função: <input name="funcao" type="text"><br>
+		<br> Tipo: <select name="tipo">
+		<option value="" selected>Selecione</option>
+		<c:forEach var="tipo" items="${tlista}">
+				<option value="${tipo.id}">${tipo.nome}</option>
+			</c:forEach>
+		</select>
 		<button type="submit">Salvar</button>
 	</form>
 
